@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  flex-direction: column; /* Dispone gli elementi in colonna */
+  align-items: center; /* Allinea gli elementi all'inizio */
+  justify-content: center;
+  width: 100%;
+}
+
+.example-container mat-form-field {
+  width: 100%; /* Assicura che ogni campo del modulo occupi l'intera larghezza */
+  margin-bottom: 16px; /* Aggiunge spazio tra i campi del modulo */
+}
