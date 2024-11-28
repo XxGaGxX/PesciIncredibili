@@ -3,6 +3,7 @@
   flex-direction: column; /* Dispone gli elementi in colonna */
   align-items: center; /* Allinea gli elementi all'inizio */
   justify-content: center;
+  margin-top: 10%;
   width: 100%;
 }
 
