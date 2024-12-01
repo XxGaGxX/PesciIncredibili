@@ -1,33 +1,34 @@
-class Pesci {
-  id?: number = 0;
-  prezzo?: number = 0.0;
+export interface Pesce {
+  id?: number;
+  prezzo?: number;
   specie? : Specie;
   eta? : number;
   sesso? : "Maschio" | "Femmina";
-  dimensioni? : number = 0.0;
+  dimensioni?: string;
+  immagine ?: string;
 }
 
-class Cliente {
-  id? : number = 0;
-  nome? : String
-  cognome? : String
-  email? : String
-  indirizzoSpedizione? : String
-  numeroCivico?: String
-  Cap? : number
+export class Cliente {
+  id?: number = 0;
+  nome?: String;
+  cognome?: String;
+  email?: String;
+  indirizzoSpedizione?: String;
+  numeroCivico?: String;
+  Cap?: number;
 }
 
-class Specie {
+export class Specie {
   nomeScientifico?: string;
   nomeComune?: string;
   habitat?: string;
-  dimensioneMedia?: number;
+  dimensioneMedia?: string;
   dieta?: string;
-  durataVita?: number;
+  durataVita?: string;
 }
 
-class Ordine {
+export class Ordine {
   id?: number = 0;
   prezzoTot?: number = 0;
-  pesci?: Pesci[];
+  pesci?: Pesce[];
 }
