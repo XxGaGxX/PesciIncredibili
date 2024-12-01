@@ -1,8 +1,23 @@
-.card > img {
-    width: 15em;
-    margin: auto;
+.example-card {
+  width: 400px;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-    width: 15em;
+.example-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+img{
+    height: 200px;
+}
+
+.mainIDv{
+    float: left;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 2em;
 }

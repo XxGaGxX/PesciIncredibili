@@ -1,5 +1,4 @@
 :host {
-  display: flex;
   flex-direction: column; /* Dispone gli elementi in colonna */
   align-items: center; /* Allinea gli elementi all'inizio */
   justify-content: center;
@@ -10,12 +9,13 @@
   display: flex;
   flex-direction: column; /* Arrange children in a column */
   align-items: center; /* Center children horizontally */ /* Ensure it takes full width */
-  width : 35em;
+  width : 30em;
   height: 30em;  
   padding : 3em;
-  margin-top: -7em;
-  background-color : #663fa9;
-  border-radius: 2em;
+  margin-top: 5em;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .example-container {
@@ -31,4 +31,12 @@
 
 .example-container button {
   margin: 0 auto;
+}
+
+body{
+    background : linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(162,0,255,1) 35%, rgba(231,0,255,1) 100%);
+}
+
+.backIcon{
+   
 }
