@@ -1,5 +1,5 @@
 .example-card {
-  width: 400px;
+  width: 350px;
   border-radius: 1em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -20,4 +20,6 @@ img{
     align-items: center;
     display: flex;
     margin-left: 2em;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

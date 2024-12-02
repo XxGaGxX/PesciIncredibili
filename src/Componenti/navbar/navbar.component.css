@@ -1,5 +1,15 @@
 a {
     margin-left: 5px;
-
+    background-color: transparent;
 }
+
+.imageLogo{
+  width: 100px;
+}
+
+
+mat-toolbar{
+  background-color: transparent;
+}
+
 

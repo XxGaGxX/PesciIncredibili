@@ -1,0 +1,31 @@
+.main{
+  text-align: center;
+  justify-content: center;
+  margin-top: 20rem;
+}
+
+body{
+  background-image: url("http://localhost:4200/homeBackground.jpg");
+  background-size: cover; /* Cover the entire area */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center;
+}
+
+body{
+  padding: 5px;
+}
+
+.main > h1 {
+  color: white;
+  font-size: 72px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.main > h3{
+  margin-top: 2rem;
+  font-size: 25px;
+  color: grey;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  color: whitesmoke;
+}
