@@ -9,11 +9,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { RouterLink } from '@angular/router';
 import { RouterLinkActive } from '@angular/router';
+import {MatGridListModule} from '@angular/material/grid-list' 
 
 @Component({
   selector: 'app-catalogo',
   standalone: true,
-  imports: [MatButtonModule, MatCardModule, NgFor, CommonModule, MatIconModule, NavbarComponent, RouterLink, RouterLinkActive],
+  imports: [MatButtonModule, MatCardModule, NgFor, CommonModule, MatIconModule, NavbarComponent, RouterLink, RouterLinkActive, MatGridListModule],
   templateUrl: './catalogo.component.html',
   styleUrl: './catalogo.component.css',
 })

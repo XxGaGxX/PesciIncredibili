@@ -1,7 +1,7 @@
 .example-card {
-  width: 350px;
-  border-radius: 1em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .example-card:hover {
@@ -9,11 +9,11 @@
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-img{
+img {
     height: 200px;
 }
 
-.mainIDv{
+.mainIDv {
     float: left;
     padding: 30px;
     justify-content: center;
@@ -23,3 +23,4 @@ img{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+

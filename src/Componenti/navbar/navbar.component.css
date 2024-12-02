@@ -12,4 +12,14 @@ mat-toolbar{
   background-color: transparent;
 }
 
+mat-toolbar > a {
+  color : white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+mat-toolbar > a:hover{
+  text-decoration: underline;
+}
+
 
