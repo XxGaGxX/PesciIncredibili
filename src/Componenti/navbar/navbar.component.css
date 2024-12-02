@@ -13,7 +13,7 @@ mat-toolbar{
 }
 
 mat-toolbar > a {
-  color : white;
+  color : #9767ff;
   text-decoration: none;
   margin-left: 20px;
 }
