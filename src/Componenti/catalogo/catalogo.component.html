@@ -1,19 +1,29 @@
-<app-navbar style="color: black;"></app-navbar>
-<div class="mainIDv" *ngFor="let pesce of pesci">
-  <mat-card class="example-card" appearance="outlined" routerLink="/fish-page">
-    <img mat-card-image [src]="pesce.immagine" alt="" style="padding: 7px;">
-    <mat-card-content style="margin-top: 5px;">
-        <mat-card-title [innerText]="pesce.specie?.nomeComune"></mat-card-title>
-        <mat-card-subtitle [innerText]="pesce.specie?.nomeScientifico"></mat-card-subtitle>
-        <li [innerText]="pesce.dimensioni"></li>
-        <li [innerText]="pesce.sesso"></li>
-        <li [innerText]="pesce.eta + ' anni'"></li>
-        <li [innerText]="pesce.prezzo + ' $'"></li>
-    </mat-card-content>
-    <mat-card-actions >
-        <button mat-button>Add <mat-icon matSuffix aria-hidden="false">shopping_cart</mat-icon></button>
-        <button mat-button>Buy</button>
-    </mat-card-actions>
-</mat-card>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <app-navbar></app-navbar>
+    <div class="mainIDv" *ngFor="let pesce of pesci">
+        <mat-card class="example-card" appearance="outlined">
+            <img mat-card-image [src]="pesce.immagine" alt="" style="padding: 7px;">
+            <mat-card-content style="margin-top: 5px;">
+                <mat-card-title [innerText]="pesce.specie?.nomeComune"></mat-card-title>
+                <mat-card-subtitle [innerText]="pesce.specie?.nomeScientifico"></mat-card-subtitle>
+                <li [innerText]="pesce.dimensioni"></li>
+                <li [innerText]="pesce.sesso"></li>
+                <li [innerText]="pesce.eta + ' anni'"></li>
+                <li [innerText]="pesce.prezzo + ' $'"></li>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button>Add <mat-icon matSuffix aria-hidden="false">shopping_cart</mat-icon></button>
+                <button mat-button>Buy</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
 
+</body>
+</html>

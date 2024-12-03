@@ -13,6 +13,7 @@ img {
     height: 200px;
 }
 
+
 .mainIDv {
     float: left;
     padding: 30px;
@@ -22,6 +23,20 @@ img {
     margin-left: 2em;
     justify-content: space-between;
     flex-wrap: wrap;
- 
+    margin-top: 5rem;
+    top: 1;
+}
+
+app-navbar {
+    position: fixed;
+    /* Keeps navbar at the top */
+    width: 100%;
+    /* Stretches navbar across the viewport */
+    z-index: 1000;
+    /* Ensures navbar is above all other elements */
+    background-color: white;
+    /* Optional: set a background to ensure visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: adds shadow for clarity */
 }
 
