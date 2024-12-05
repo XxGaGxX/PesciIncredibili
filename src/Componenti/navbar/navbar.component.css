@@ -11,14 +11,14 @@ a {
 
 
 mat-toolbar{
-  background-color: white;
+  background-color : transparent;
   position: fixed;
   margin : 0;
   height: 5rem;
 }
 
 mat-toolbar > a {
-  color : black;
+  color : white;
   text-decoration: none;
   margin-left: 20px;
 }

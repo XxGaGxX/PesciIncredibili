@@ -13,6 +13,16 @@ img {
     height: 200px;
 }
 
+body {
+    background-color: black;
+}
+
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure the elements stretch to the full height */
+    width: 100%; /* Ensure the elements stretch to the full width */
+}
 
 .mainIDv {
     float: left;
@@ -33,8 +43,6 @@ app-navbar {
     width: 100%;
     /* Stretches navbar across the viewport */
     z-index: 1000;
-    /* Ensures navbar is above all other elements */
-    background-color: white;
     /* Optional: set a background to ensure visibility */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     /* Optional: adds shadow for clarity */

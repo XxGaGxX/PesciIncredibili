@@ -1,4 +1,4 @@
-.title{
+.title {
   text-align: center;
   align-items: center;
   margin: auto;
@@ -6,40 +6,90 @@
   height: 100%;
 }
 
-body{
+body {}
+
+.main {
   background-image: url("http://localhost:4200/homeBackground.jpg");
-  background-size: cover; /* Cover the entire area */
-  background-repeat: repeat; /* Prevent the image from repeating */
+  background-size: cover;
+  /* Cover the entire area */
+  background-repeat: repeat;
+  /* Prevent the image from repeating */
   background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* Text color */
+  text-align: center;
 }
 
-.main{
-  padding: 5px;
-}
-
-.spacer{
+/* .spacer {
   height: 15rem;
-}
-
-.descriptionHome{
+} */
+/* 
+.descriptionHome {
   height: 51rem;
-  
+
+} */
+
+
+
+.title {
+  display: flex;
+  /* Use Flexbox for alignment */
+  flex-direction: column;
+  /* Stack items vertically */
+  justify-content: center;
+  /* Center vertically */
+  align-items: center;
+  /* Center horizontally */
+  height: 100%;
+  /* Full height of the parent container */
+  margin: 0;
+  /* Remove any extra margins */
+  text-align: center;
+  /* Ensure text is centered */
 }
 
-
-
-.title > h1 {
+.title>h1 {
   color: white;
   font-size: 72px;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  /* Remove default margin */
 }
 
-.dec{
+.btnCat{
+  margin-top: 20px;
+  height: 65px;
+  border-radius: 10px;
+  padding: 10px;
+  border : 0px;
+  font-size: larger;
+  background : linear-gradient(90deg,
+    rgba(255, 252, 12, 1) 0%,
+    rgba(255, 33, 0, 1) 100%);
+}
+
+.title>h3 {
+  color: white;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  /* Remove default margin */
+  margin-top: 35px;
+  /* Optional: Add a small gap if needed */
+   
+}
+
+.dec {
   background-color: aqua;
   text-align: center;
 }
 
-.dec > .descriptionHome > h1 {
+.dec>.descriptionHome>h1 {
   font-size: 45px;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -49,13 +99,3 @@ body{
   font-family: 'Times New Roman', Times, serif;
   color: grey;
 }
-
-.sub > h3{
-  margin-top: 2rem;
-  font-size: 25px;
-  color: grey;
-  font-family: 'Times New Roman', Times, serif;
-  text-decoration: underline;
-  color: whitesmoke;
-}
-
