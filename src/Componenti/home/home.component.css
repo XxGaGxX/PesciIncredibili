@@ -68,9 +68,9 @@ body {}
   padding: 10px;
   border : 0px;
   font-size: larger;
-  background : linear-gradient(90deg,
-    rgba(255, 252, 12, 1) 0%,
-    rgba(255, 33, 0, 1) 100%);
+  /* background : transparent; linear-gradient(90deg,
+      rgba(255, 252, 12, 1) 0%,
+      rgba(255, 33, 0, 1) 100%); */
 }
 
 .title>h3 {
