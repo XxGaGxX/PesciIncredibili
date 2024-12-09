@@ -4,6 +4,7 @@ import { LoginComponent } from '../Componenti/login/login.component';
 import { CatalogoComponent } from '../Componenti/catalogo/catalogo.component';
 import { HomeComponent } from '../Componenti/home/home.component';
 import { AboutComponent } from '../Componenti/about/about.component';
+import { CartComponent } from '../Componenti/cart/cart.component';
 
 export const routes: Routes = [
   {
@@ -21,6 +22,10 @@ export const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'cart',
+    component: CartComponent
   }
 
 

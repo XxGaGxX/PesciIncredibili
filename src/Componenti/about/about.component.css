@@ -1,12 +1,35 @@
-app-navbar {
-    position: fixed;
-    /* Keeps navbar at the top */
-    width: 100%;
-    /* Stretches navbar across the viewport */
-    z-index: 1000;
-    /* Ensures navbar is above all other elements */
-    background-color: white;
-    /* Optional: set a background to ensure visibility */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Optional: adds shadow for clarity */
+::ng-deep app-navbar mat-toolbar {
+  position: fixed;
+  background-color: white;
 }
+
+::ng-deep app-navbar mat-toolbar a {
+  color : black !important;
+}
+
+
+body {
+  padding : 3rem;
+  background-color: white;
+  color : black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDiv {
+  width: 60rem;
+  font-size: larger;
+}
+
+.titleDiv {
+  text-align: center;
+  margin-top : -20rem;
+
+}
+
+.titleDiv > h1 {
+  font-size: 40px;
+  line-height: 1.1;
+}
+

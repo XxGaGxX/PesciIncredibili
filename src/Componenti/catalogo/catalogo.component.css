@@ -2,6 +2,7 @@
     width: 350px;
     border-radius: 1em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
 }
 
 .example-card:hover {
@@ -11,10 +12,11 @@
 
 img {
     height: 200px;
+    border-radius: 1em;
 }
 
 body {
-    background-color: black;
+    background-color: white;
 }
 
 html, body {
@@ -37,14 +39,12 @@ html, body {
     top: 1;
 }
 
-app-navbar {
-    position: fixed;
-    /* Keeps navbar at the top */
-    width: 100%;
-    /* Stretches navbar across the viewport */
-    z-index: 1000;
-    /* Optional: set a background to ensure visibility */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Optional: adds shadow for clarity */
+::ng-deep app-navbar mat-toolbar {
+  background-color: white !important;
 }
+
+::ng-deep app-navbar mat-toolbar a {
+  color : black !important;
+}
+
 

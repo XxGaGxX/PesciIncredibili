@@ -1,0 +1,13 @@
+body {
+  padding: 3rem;
+  background-color: white
+}
+
+::ng-deep app-navbar mat-toolbar {
+  background-color: white !important;
+}
+
+::ng-deep app-navbar mat-toolbar a {
+  color : black !important;
+}
+

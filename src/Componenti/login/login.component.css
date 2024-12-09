@@ -1,38 +1,45 @@
-:host {
-  /* flex-direction: column; Dispone gli elementi in colonna */
-  align-items: center; /* Allinea gli elementi all'inizio */
-  justify-content: center;
-  align-items: center;
+body {
+  background: linear-gradient(90deg, rgb(255, 233, 34) 0%, rgb(255, 94, 0) 35%, rgb(255, 0, 98) 100%);
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Make the body take the full viewport height */
+  margin: 0; /* Remove default margin */
+  position: relative; /* For positioning child elements like the arrow */
+}
+
+button[routerLink] {
+  position: absolute; /* Position the back arrow button */
+  top: 10px; /* Place it near the top */
+  left: 10px; /* Place it near the left */
+  background-color: transparent;
+  border: 0;
+  color: white;
 }
 
 .mainDiv {
   display: flex;
-  flex-direction: column; /* Arrange children in a column */
-  align-items: center; /* Center children horizontally */ /* Ensure it takes full width */
-  width : 30em;
+  flex-direction: column;
+  align-items: center;
+  width: 30em;
   height: 30em;
-  padding : 3em;
+  padding: 3em;
   background-color: white;
   border-radius: 1em;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .example-container {
-  display: flex; /* Ensure this is a flex container */
-  flex-direction: column; /* Arrange children in a column */
-  align-items: center; /* Center children horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .example-container mat-form-field {
-  width: 100%; /* Assicura che ogni campo del modulo occupi l'intera larghezza */
-  margin-bottom: 16px; /* Aggiunge spazio tra i campi del modulo */
+  width: 100%;
+  margin-bottom: 16px;
 }
 
 .example-container button {
   margin: 0 auto;
 }
-
-body{
-    background : linear-gradient(90deg, rgb(255, 233, 34) 0%, rgb(255, 94, 0) 35%, rgb(255, 0, 98) 100%);
-}
-

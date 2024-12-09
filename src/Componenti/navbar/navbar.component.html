@@ -1,14 +1,18 @@
 
   <mat-toolbar class="fixed-header">
-    <img src='http://localhost:4200/pesciIncredibiliLogo.ico' class="imageLogo" alt="Pesci Incredibili Logo">
-    
+    <img src='http://localhost:4200/pesciIncredibiliLogo.ico' RouterLink='/' routerLinkActive="router-link-active" class="imageLogo" alt="Pesci Incredibili Logo">
+
     <a routerLink="/" routerLinkActive="router-link-active"
       ariaCurrentWhenActive="page">Home</a>
     <a routerLink="/about" routerLinkActive="router-link-active">Chi siamo</a>
     <a routerLink="/catalogo" routerLinkActive="router-link-active">Catalogo</a>
     <a routerLink="/contatti" routerLinkActive="router-link-active">Contatti</a>
     <span class="spacer" style="width: 100rem;"></span>
-    <a routerLink="/login" routerLinkActive="router-link-active"><mat-icon>person</mat-icon></a>
+    <div class="leftIcons">
+      <a routerLink="/cart" routerLinkActive="router-link-active"><mat-icon>shopping_cart</mat-icon></a>
+      <a routerLink="/login" routerLinkActive="router-link-active"><mat-icon>person</mat-icon></a>
+    </div>
+
   </mat-toolbar>
 
 
