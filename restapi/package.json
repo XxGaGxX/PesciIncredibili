@@ -1,0 +1,14 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "Rest API per l'accesso al db Pesci",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Vagnini",
+  "license": "ISC",
+  "dependencies": {
+    "mssql": "^11.0.1"
+  }
+}
