@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+<p>Elenco Clienti</p>
+<div Name="Elenco">
+  <tr>Nome<td>Email</td><td>iscrizione</td></tr>
+  @for (Cliente of this.clienti; track Cliente){
+    <tr>
+      <td>{{Cliente.nomeUtente}}</td>
+      <td>{{Cliente.smail}}</td>
+      <td>{{Cliente.dataCreazione}}</td>
+    </tr>
+  }
 
-<body>
-  <app-navbar></app-navbar>
-  <div class="mainDiv">
-    <div class="titleDiv">
-      <h1>Pesci Incredibili è il sito web ideale per tutti gli appassionati del mondo marino e per chi è curioso di
-        scoprire la straordinaria biodiversità dei pesci.</h1>
-    </div>
-
-    <p> Con una vasta raccolta di specie provenienti dai mari e oceani
-      di tutto il mondo, il nostro sito ti offre informazioni dettagliate su ogni pesce, dalle caratteristiche fisiche
-      ai comportamenti, dalle curiosità alle esigenze di habitat. Se stai cercando ispirazione per il tuo acquario o
-      semplicemente desideri esplorare il mondo sottomarino, Pesci Incredibili è il punto di riferimento perfetto
-      per scoprire la bellezza e la varietà della vita acquatica. Unisciti a noi in questo viaggio alla scoperta delle
-      creature più affascinanti dei nostri mari!</p>
-  </div>
-
-</body>
-
-</html>
+</div>
