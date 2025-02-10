@@ -1,13 +1,17 @@
 
 <p>Elenco Clienti</p>
+
+<button (click)="MostraClienti()">bottone clienti</button>
+
 <div Name="Elenco">
   <tr>Nome<td>Email</td><td>iscrizione</td></tr>
   @for (Cliente of this.clienti; track Cliente){
     <tr>
-      <td>{{Cliente.nomeUtente}}</td>
-      <td>{{Cliente.smail}}</td>
-      <td>{{Cliente.dataCreazione}}</td>
+      <td>| {{Cliente.Nome}} |</td>
+      <td>| {{Cliente.Email}} |</td>
+      <td>| {{Cliente.DataIscrizione}} |</td>
     </tr>
   }
 
 </div>
+
