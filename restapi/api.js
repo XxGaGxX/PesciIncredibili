@@ -42,6 +42,13 @@ router.route('/login/:email').get((request, response) => {
   })
 })
 
+router.route('/catalogo').get((req,res) => {
+  console.log("chiamato catalogo")
+  Db.getCatalogo().then((data) => {
+    res.json(data[0]);
+  })
+})
+
 
 
 var  port = process.env.PORT || 8090;

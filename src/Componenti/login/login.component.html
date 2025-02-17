@@ -11,21 +11,26 @@
     <div class="mainDiv">
       <h1 style="text-align: left; font-size: 35px; margin-bottom: 1.3em; color : black; float: left;">Login</h1>
       <mat-form-field>
-        <mat-icon matIconPrefix>email</mat-icon>
+        <mat-icon matPrefix>email</mat-icon>
         <mat-label>Enter your mail</mat-label>
-        <input matInput />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-icon matIconPrefix>lock</mat-icon>
-        <mat-label>Enter your password</mat-label>
-        <input matInput [type]="hide() ? 'password' : 'text'" />
-        <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'"
-          [attr.aria-pressed]="hide()">
-          <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
-        </button>
+        <input matInput #emailInput />
       </mat-form-field>
 
-      <button mat-stroked-button style="background-color: white; color: black; margin-top: 2em;">Login</button>
+      <mat-form-field>
+        <mat-icon matPrefix>lock</mat-icon>
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide() ? 'password' : 'text'" #passwordInput />
+        <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide()">
+          <mat-icon>{{ hide() ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+      </mat-form-field>
+      
+      <button mat-stroked-button
+              style="background-color: white; color: black; margin-top: 2em;"
+              (click)="Login(emailInput.value, passwordInput.value)">
+        Login
+      </button>
+
     </div>
 
   </div>

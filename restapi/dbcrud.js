@@ -55,9 +55,21 @@ async  function  getLogin(Email) {
 }
 
 
+async function getCatalogo() {
+  try{
+    let pool = await sql.connect(config)
+    let catalogo = await pool.request()
+    .query("SELECT * FROM Catalogo")
+    return catalogo.recordsets
+  }catch(error){
+    console.log(error);
+  }
+}
+
 module.exports = {
   getElencoClienti:  getElencoClienti,
   getCliente:  getCliente,
   getLogin: getLogin,
-  aggiungiCliente: aggiungiCliente
+  aggiungiCliente: aggiungiCliente,
+  getCatalogo: getCatalogo
 }
