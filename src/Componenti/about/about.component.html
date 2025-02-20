@@ -1,17 +1,22 @@
+<app-navbar></app-navbar>
+<div class="mainDiv" style="margin-top: 5rem;">
+  <p>Elenco Clienti</p>
 
-<p>Elenco Clienti</p>
+  <button (click)="MostraClienti()">bottone clienti</button>
 
-<button (click)="MostraClienti()">bottone clienti</button>
 
-<div Name="Elenco">
-  <tr>Nome<td>Email</td><td>iscrizione</td></tr>
-  @for (Cliente of this.clienti; track Cliente){
+
+  <div Name="Elenco">
+    <tr>Nome<td>Email</td>
+      <td>iscrizione</td>
+    </tr>
+    @for (Cliente of this.clienti; track Cliente){
     <tr>
       <td>| {{Cliente.Nome}} |</td>
       <td>| {{Cliente.Email}} |</td>
       <td>| {{Cliente.DataIscrizione}} |</td>
     </tr>
-  }
+    }
 
+  </div>
 </div>
-
