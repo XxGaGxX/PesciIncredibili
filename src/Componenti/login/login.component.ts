@@ -6,6 +6,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
 import { AuthService } from '../../../services/auth.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import sha256 from 'crypto-js/sha256';
+import { HmacSHA256, enc  } from 'crypto-js';
 
 @Component({
   selector: 'app-login',
@@ -18,11 +21,13 @@ import { AuthService } from '../../../services/auth.service';
     RouterLink,
     RouterOutlet,
     RouterLinkActive,
+    HttpClientModule
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'] // NOTA: era "styleUrl", deve essere "styleUrls"
 })
 export class LoginComponent {
+  http = inject(HttpClient)
   private authService = inject(AuthService);
 
   hide = signal(true);
@@ -35,14 +40,14 @@ export class LoginComponent {
   }
 
   Login(Email: string, Password: string) {
-    console.log('Email:', Email);
-    console.log('Password:', Password);
-
-    if (Email && Password) {
-      this.authService.login(Email, Password);
-    } else {
-      alert('Please enter both email and password.');
-    }
+    this.http.get(`http://localhost:8090/api/login/${Email}`).subscribe({
+      next : (account:any) => {
+        console.log(account)
+        var SHA = require("crypto-ts").SHA256;
+        console.log(SHA256(Password))
+        
+      }
+    })
   }
 }
 

@@ -1,7 +1,7 @@
 const config = {
   user:"SA",
   password:"burbero2025",
-  server: "PC2212BIS",
+  server: "PC1025BIS",
   database:"NEGOZIO5F",
   options:{
       trustConnection: true,

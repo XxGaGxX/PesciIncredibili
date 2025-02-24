@@ -42,6 +42,7 @@ async  function  aggiungiCliente(cliente) {
 
 async  function  getLogin(Email) {
   try {
+    console.log("Daje")
     let  pool = await  sql.connect(config);
     let  cliente = await  pool.request()
     .input('email_cliente', sql.NVarChar, Email)
@@ -51,7 +52,6 @@ async  function  getLogin(Email) {
   catch (error) {
     console.log(error);
   }
-
 }
 
 
